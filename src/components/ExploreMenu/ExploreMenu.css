@@ -1,0 +1,79 @@
+.explore-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f9f9f9; /* Added a background color */
+}
+
+.explore-menu h1 {
+    color: #262626;
+    font-weight: 500;
+    margin-bottom: 10px; /* Added a margin for spacing */
+    font-size: 24px; /* Adjusted font size for better readability */
+}
+
+.explore-menu-text {
+    max-width: 60%;
+    color: #808080; /* Fixed typo: replaced "columns" with "color" */
+    font-size: 16px; /* Adjusted font size */
+    line-height: 1.5; /* Improved line spacing for better readability */
+    margin-bottom: 20px; /* Added margin for spacing */
+}
+
+.explore-menu-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+    margin: 20px 0;
+    overflow-x: auto; /* Changed from scroll to auto for better UX */
+    padding-bottom: 10px; /* Added padding to avoid content cutoff */
+}
+
+.explore-menu-list::-webkit-scrollbar {
+    height: 8px; /* Custom scrollbar height */
+}
+
+.explore-menu-list::-webkit-scrollbar-thumb {
+    background-color: #ccc; /* Color of the scrollbar thumb */
+    border-radius: 10px; /* Rounded edges for the scrollbar thumb */
+}
+
+.explore-menu-list-item img {
+    width: 7.5vw;
+    min-width: 80px;
+    max-width: 80px; /* Added a max-width for better control on larger screens */
+    cursor: pointer;
+    border-radius: 50%;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* Enhanced transition for smoother effect */
+}
+
+.explore-menu-list-item p {
+    margin-top: 10px;
+    color: #747474;
+    font-size: max(1.4vw, 16px); /* Ensures text remains legible across different screen sizes */
+    cursor: pointer;
+    text-align: center; /* Center-align text for consistency with image alignment */
+    line-height: 1.4; /* Improved line spacing for better readability */
+    transition: color 0.2s ease-in-out; /* Smooth transition for color changes */
+}
+
+.explore-menu-list-item p:hover {
+    color: tomato; /* Darken text color slightly on hover for better emphasis */
+}
+
+.explore-menu hr {
+    margin: 10px 0;
+    height: 2px;
+    background-color: #e2e2e2;
+    border: none;
+    border-radius: 1px; /* Added rounded edges for a smoother look */
+    transition: background-color 0.2s ease-in-out; /* Added transition for a smooth color change effect */
+}
+.explore-menu-list-item .active{
+    border: 4px solid tomato ;
+    padding: 2px;
+}
+

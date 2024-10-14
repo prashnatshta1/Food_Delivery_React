@@ -1,0 +1,91 @@
+.header {
+    height: 35vw;
+    margin: 30px auto;
+    background: url('/header_img.png') no-repeat center center;
+    background-size: cover; /* Change to cover for better responsiveness */
+    position: relative;
+    border-radius: 10px; /* Adds a slight roundness to the header edges */
+    overflow: hidden; /* Ensures content doesn’t spill out of rounded corners */
+}
+
+.header-contents {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5vw;
+    max-width: 50%;
+    bottom: 10%;
+    left: 6vw;
+    color: white; /* Ensure text color is white */
+    animation: fadeIn 3s;
+}
+
+.header-contents h2 {
+    font-weight: 500;
+    color: inherit; /* Inherit color from parent */
+    font-size: max(4.5vw, 22px);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Adds a shadow to improve readability */
+}
+
+.header-contents p {
+    color: white;
+    font-size: max(1vw, 16px); /* Ensures text doesn't get too small on larger screens */
+    line-height: 1.5; /* Improves readability by adding space between lines */
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5); /* Adds a subtle shadow for better contrast */
+    margin: 0; /* Removes any default margin for better control over spacing */
+}
+
+.header-contents button {
+    border: none;
+    color: #e04f4f; /* White text for contrast */
+    font-weight: 500;
+    padding: 1vw 2.3vw;
+    background-color: white; /* A deep blue-gray that complements orange */
+    font-size: max(1vw, 13px);
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.header-contents button:hover {
+    background-color: #e98145; /* A slightly darker shade for hover effect */
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.header-contents button:active {
+    transform: translateY(2px);
+}
+@media (max-width: 1050px) {
+
+    .header-contents{
+        max-width: 45%;
+    }
+}
+@media (max-width: 750px) {
+    .header {
+        height: 50vw; /* Adjusted the height for smaller screens */
+    }
+    .header-contents {
+        max-width: 70%; /* Adjusted width for smaller screens */
+    }
+    .header-contents p {
+        font-size: 1rem; /* You can adjust the font size based on your design */
+        line-height: 1.5; /* Adjust line-height for readability */
+        margin-bottom: 1rem; /* Adds space below the paragraph */
+    }
+    .header-contents button {
+        padding: 10px 20px; /* Adjust the button size */
+        font-size: 1rem; /* Set font size for the button */
+        background-color: #ff5722; /* Example background color */
+        color: #fff; /* Button text color */
+        border: none; /* Remove default border */
+        border-radius: 5px; /* Rounded corners */
+        cursor: pointer; /* Changes cursor on hover */
+    }
+    .header-contents button:hover {
+        background-color: #e64a19; /* Darker shade on hover */
+    }
+}
+
